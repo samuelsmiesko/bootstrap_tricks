@@ -1,0 +1,113 @@
+
+
+body{
+    font-family: 'Varela Round', sans-serif;
+}
+
+.top{
+    background-color: rgb(236, 235, 232);;
+}
+
+.centerdiv{
+    border: 2px solid antiquewhite;
+    border-radius: 8px;
+    color: antiquewhite;
+    font-size: 25px;
+    line-height: 3em;
+}
+    
+
+
+.div2{
+    padding-top: 5px;
+    background-color: blueviolet;
+    box-shadow: 100px 0px 100px rgb(79, 15, 116) inset;
+    animation-name: bluring;
+    animation-duration: 2s;
+
+}
+
+@keyframes bluring {
+    0%   { 
+        opacity: 0.2;
+        }
+    
+    100%   { 
+        opacity: 1.0;     
+            }
+}
+
+
+.div3{
+    background-color: rgb(35, 22, 211);
+    box-shadow: 100px 0px 100px rgb(39, 75, 190) inset;
+}
+
+.div4{
+    background-color: rgb(19, 19, 29);
+    box-shadow: 100px 0px 100px rgb(37, 37, 37) inset;
+}
+
+.divisiondiv{
+    border-bottom: 3px solid rgb(92, 199, 248);
+    animation-name: roll;
+    animation-duration: 2s;
+}
+
+@keyframes roll {
+    0%   { 
+        margin-left: 50%;
+        margin-right: 50%;
+        }
+    
+    100%   { 
+        margin-left: 0%;
+        margin-right: 0%;
+            }
+}
+
+#s1:hover, #s2:hover, #s3:hover{
+    color: blueviolet;
+}
+
+#s2, #s3{
+    margin-left:2%;
+    position: relative;
+    animation-name: drop1;
+    animation-duration: 1s;
+}
+
+#s1 {
+    margin-left:70%;
+    position: relative;
+    animation-name: drop1;
+    animation-duration: 0.5s;
+}
+
+
+@keyframes drop1 {
+    from {
+        top: -50px;
+      }
+    
+      to {
+        top: 0px;
+      }
+}
+
+ 
+.button1:hover{
+    .textb {
+        position: relative;
+        animation-name: scroll1;
+        animation-duration: 0.5s;
+    }
+}
+    
+@keyframes scroll1 {
+  
+    0% {top: 50px;}
+    50% {top: 0px;}
+    100% {top: -50px;}
+  
+}
